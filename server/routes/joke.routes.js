@@ -1,5 +1,5 @@
 const JokeController = require("../controllers/joke.controller");
-
+// imported JokeController and created the express routes
 module.exports = app => {
   app.get("/api/jokes/", JokeController.findAllJokes);
   app.get("/api/jokes/:id", JokeController.findOneJoke);
